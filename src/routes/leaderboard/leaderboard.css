@@ -1,0 +1,243 @@
+body
+{
+ 	font-family: printerFont;
+    background-color: black;
+}
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@font-face 
+{
+   font-family: printerFont;
+    src: url(SF-Pro.ttf);
+}
+
+h1 
+{
+    font-size: 5vw;
+    color: white;
+	font-family: printerFont;
+  	text-align: center;
+}
+/*  */
+h4 {
+    font-family:printerFont;
+	color: white;
+	display:inline;
+	vertical-align: top;
+}
+.Printer {
+	width: 50vw;
+	height: 5vw;
+	padding: 1px 10px 1px 10px;
+    border-radius: 6px;
+	background-color: #f6aa1e;
+	color: white;
+	margin-left: 0.1vw;
+	vertical-align: top;
+	
+}
+.startbutton 
+{
+  font-family: printerFont;
+    align-items: center;
+    background-color: #f6aa1e;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 2.5vw;
+    justify-content: center;
+    line-height: 3vw;
+    min-height: 30px;
+/*     overflow: hidden; */
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+        box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+        color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.startbutton:hover,
+.startbutton:focus 
+{
+    background-color: orange;
+    color: #ffffff;
+  
+}
+
+.startbutton:active 
+{
+    background-color: orange;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.startbutton:disabled 
+{
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+}
+/*  */
+select 
+{
+  outline: none;
+  font-family: printerFont;
+  color: white;
+    padding: 0.8vw 4vh 0.8vw 4vh;
+    border: none;
+    border-radius: 100px;
+    background-color: orange;
+    text-align: center;
+}
+.mat-list-base .mat-list-option:hover 
+{
+    font-family: printerFont;
+  background-color: #d68b00;
+}
+/*  */
+.option:hover 
+{
+    font-family: printerFont;
+  background-color: #b07507;
+}
+
+
+body 
+{
+  
+/*   overflow: hidden; */
+}
+::selection {
+  background: #d18800;
+}
+
+ul {
+    font-family: printerFont;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+    font-family: printerFont;
+  float: left;
+}
+
+li a {
+    font-family: printerFont;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    font-family: printerFont;
+  	background-color: orange;
+	cursor: pointer;
+}
+/*  */
+.textInput {
+    font-family: printerFont;
+	outline: none;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid #000000;
+    padding: 1.5vw 5vh 1.5vw 5vh;
+	text-align: center;
+    border: 2px solid gray;
+}
+.textInputBig {
+    font-family: printerFont;
+	outline: none;
+    align-items: left;
+    color: white;
+    border-radius: 7px;
+    background-color: orange;
+    border: 2px solid gray;
+    padding: 1.5vw 5vh 1.5vw 5vh;
+	text-align: left;
+    border: 2px solid gray;
+}
+.textInput::placeholder {
+    font-family: printerFont;
+	text-align: center;
+    border: 2px solid gray;
+}
+
+::placeholder { 
+    font-family: printerFont;
+  color: white;
+  opacity: 1; 
+}
+
+.textInputSmall {
+    font-family: printerFont;
+  	outline: none;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid gray;
+    padding: 1vw 0.1vw 1vw 0.1vw;
+	text-align: center;
+    border: 2px solid gray;
+}
+.textInputSmall::placeholder {
+    font-family: printerFont;
+	text-align: center;
+}
+
+.textInput:focus {
+    font-family: printerFont;
+    align-items: center;
+    background-color: #d48e0c;
+    border: 2px solid #000000;
+}
+
+.LeadText {
+	color: white;
+	padding:5px;
+	background-color:#333333;
+	border-radius: 5px;
+	position: relative;
+    top: 6%;
+    transform: translateY(-25%);
+    border: 2px solid gray;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.info {
+	padding: 10px;
+	border-radius: 6px;
+	background-color: #333;
+	color: white;
+	margin-top: 5px;
+	display: inline-block;
+  	margin-bottom: 5px;
+    border: 2px solid gray;
+	font-size:1vw;
+}

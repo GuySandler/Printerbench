@@ -1,0 +1,308 @@
+body {
+    background-color: black;
+    font-family: printerFont;
+}
+@font-face {
+    font-family: printerFont;
+    src: url(SF-Pro.ttf);
+}
+.logo {
+    width: 15vw;
+    height: 15vw;
+}
+/* Hs */
+h1 {
+    font-size: 5vw;
+    color: white;
+}
+h2 {
+    /* font-size: 2.5vw; */
+    color: white;
+}
+h3 {
+    /* font-size: 2.5vw; */
+    color: white;
+}
+h4 {
+    font-family: printerFont;
+    color: white;
+    display: inline;
+    vertical-align: top;
+}
+/* buttons */
+button {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7.5px;
+    background-color: #db8f00;
+    color: white;
+    padding: 12px 20px 12px 20px;
+	cursor:pointer;
+}
+.button:active {
+    background-color: #db8f00;
+}
+.button:disabled {
+    cursor: not-allowed;
+    background: gray;
+}
+/* navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    cursor: pointer;
+    background-color: #db8f00;
+}
+/* leaderboard */
+.Printer {
+    width: 50vw;
+    height: 5vw;
+    padding: 1px 10px 1px 10px;
+    border-radius: 6px;
+    background-color: #db8f00;
+    color: white;
+    margin-left: 0.1vw;
+    vertical-align: top;
+}
+.LeadText {
+    color: white;
+    padding: 5px;
+    background-color: #333333;
+    border-radius: 5px;
+    position: relative;
+    top: 6%;
+    transform: translateY(-25%);
+    border: 2px solid gray;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.info {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    margin-top: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    border: 2px solid gray;
+    font-size: 1vw;
+}
+leadImg {
+    padding: 3px;
+    background-color: #333;
+    border-radius: 6px;
+    border: 2px solid gray;
+    outline: none;
+    display: inline-block;
+}
+/* inputs */
+.textInput {
+    font-family: printerFont;
+    outline: none;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #db8f00;
+    border: 2px solid #000000;
+    padding: 1.5vw 5vh 1.5vw 5vh;
+    text-align: center;
+}
+.textInputBig {
+    font-family: printerFont;
+    outline: none;
+    align-items: left;
+    color: white;
+    border-radius: 7px;
+    background-color: #db8f00;
+    padding: 1.5vw 5vh 1.5vw 5vh;
+    text-align: left;
+}
+.textInput::placeholder {
+    font-family: printerFont;
+    text-align: center;
+}
+.textInputSmall {
+    font-family: printerFont;
+    outline: none;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #db8f00;
+    border: 2px solid gray;
+    padding: 1vw 0.1vw 1vw 0.1vw;
+    text-align: center;
+}
+::placeholder {
+    font-family: printerFont;
+    color: white;
+}
+.textInputSmall::placeholder {
+    font-family: printerFont;
+    text-align: center;
+}
+.textInput:focus {
+    font-family: printerFont;
+    align-items: center;
+}
+/* toggle */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+}
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggle .knob {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #db8f00;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+.toggle .knob:before {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+.toggle input:checked + .knob {
+    background-color: #707070;
+}
+.toggle input:focus + .knob {
+    box-shadow: 0 0 1px #2196f3;
+}
+.toggle input:checked + .knob:before {
+    background-color: #ffffff;
+    -webkit-transform: translateX(48px);
+    -ms-transform: translateX(48px);
+    transform: translateX(48px);
+}
+/* textarea */
+TextArea {
+    outline: 2px solid gray;
+    color: white;
+    border-radius: 5px;
+    background-color: orange;
+    border: 2px solid #000000;
+}
+/* select (dropdown) */
+select {
+    outline: none;
+    padding: 1.5vw 5vh 1.4vw 5vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #db8f00;
+    text-align: center;
+    font-family: printerFont;
+    color: white;
+}
+/* flipswitch */
+.flipswitch {
+    position: relative;
+    width: 108px;
+    font-family: printerFont;
+}
+.flipswitch input[type="checkbox"] {
+    display: none;
+}
+.flipswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
+    font-family: printerFont;
+}
+.flipswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before,
+.flipswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 24px;
+    padding: 0;
+    line-height: 24px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: printerFont;
+}
+.flipswitch-inner:before {
+    content: "SPEED  ";
+    padding-left: 8px;
+    background-color: #db8f00;
+    color: #ffffff;
+    font-family: printerFont;
+}
+.flipswitch-inner:after {
+    content: "FLOW";
+    padding-right: 12px;
+    background-color: #db8f00;
+    color: #ffffff;
+    text-align: right;
+    font-family: printerFont;
+}
+.flipswitch-switch {
+    width: 31px;
+    margin: -3.5px;
+    background: #9e9e9e;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 81px;
+    transition: all 0.3s ease-in 0s;
+    font-family: printerFont;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+    margin-left: 0;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+    right: 0;
+}
+/* custom */
+.label {
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #db8f00;
+}
