@@ -1,5 +1,5 @@
 <script>
-	import './donate.css';
+	import './styles.css';
 </script>
 
 <div class="app" data-sveltekit-preload-data="hover">
