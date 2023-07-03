@@ -5,22 +5,6 @@
   <!-- <li><a on:click={gotodonate}>Donate</a></li> -->
   <!-- <li><a>About</a></li> -->
 </ul>
-<script>
-		function gotocustom()
-{
-	location.href="/custom";		
-};
-
-function gotoleaderboard()
-{
-	location.href="/leaderboard";		
-};
-
-function goback()
-{
-	location.href="..";		
-}
-</script>
 
 <center>
 	<h1 style="padding: 10px; border-radius: 6px; background-color: #333;">Admin Panel</h1>
@@ -210,6 +194,20 @@ function goback()
 	{/if}
 </center>
 <script lang="ts">
+	function gotocustom()
+	{
+		location.href="/custom";		
+	};
+	
+	function gotoleaderboard()
+	{
+		location.href="/leaderboard";		
+	};
+	
+	function goback()
+	{
+		location.href="..";		
+	}
 	// default
 	let score = "";
 	let notComplete = true;
