@@ -29,6 +29,10 @@
 
 	
 </script>
+<svelte:head>
+	<meta name="google-site-verification" content="rDjI7Wku_kUsS0hDCZK1PxxpfDLVC4jFMNE0p1SwgCE" />
+</svelte:head>
+
 <ul>
 	<li><a on:click={gotohome}>Home</a></li>
 	<li><a on:click={gotocustom}>Benchmark</a></li>
@@ -36,7 +40,7 @@
 	<!-- <li><a on:click={gotodonate}>Donate</a></li> -->
 	<!-- <li><a>About</a></li> -->
 </ul>
-<meta name="google-site-verification" content="rDjI7Wku_kUsS0hDCZK1PxxpfDLVC4jFMNE0p1SwgCE" />
+
 <center>
 	<!-- <img src={hex} style="width: 37vw;"> -->
 	<h1 style="text-shadow: 1px 1px  #ccc, 2px 2px  #ccc,
