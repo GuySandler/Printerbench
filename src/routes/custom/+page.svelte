@@ -261,10 +261,7 @@
 	import { initializeApp } from "firebase/app";
 	import { getFirestore, collection, addDoc } from "firebase/firestore";
 
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
-	 
-	inject({ mode: dev ? 'development' : 'production' });
+	
 
 	let score;
 	let notComplete = true;

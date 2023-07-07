@@ -323,10 +323,5 @@
 			Cloud = DataList[selected-1].Cloud;
 		}
 	GetStuff()
-
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
-	 
-	inject({ mode: dev ? 'development' : 'production' });
 </script>
  
