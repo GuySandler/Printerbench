@@ -31,6 +31,8 @@
 </script>
 <svelte:head>
 	<meta name="google-site-verification" content="rDjI7Wku_kUsS0hDCZK1PxxpfDLVC4jFMNE0p1SwgCE" />
+	<meta name="description" content="Easily approximate how good your printer is and compare it to others on the leaderboard for free">
+	<meta name="keywords" content="printerbench, 3d printerbench, printer bench, 3dprinter, 3d printer, 3dprinting, 3d printing, prusa, creality, anycubic, fdm, ender, printer, benchmark, 3d printer contest, 3d printer test, 3d printer comparison, 3d printer benchmark, 3d printer review">
 </svelte:head>
 
 <ul>
