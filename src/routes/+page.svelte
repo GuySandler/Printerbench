@@ -26,6 +26,11 @@
 	function discordLink() {
 		location.href="https://discord.gg/bsFEKJSJkH";
 	}
+
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+	 
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 <ul>
 	<li><a on:click={gotohome}>Home</a></li>

@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.0.1",
 		"esm-env": "^1.0.0",
 		"firebase": "^9.19.1",
 		"firebase-admin": "^11.7.0",
